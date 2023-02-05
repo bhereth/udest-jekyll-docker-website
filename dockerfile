@@ -8,4 +8,4 @@ RUN apk udpate
 RUN apk add --no-cache build-base gcc cmake git
 
 # Update the Ruby bundler and install Jekyll
-RUN gemu update bundler && gem install bundler jekyll
+RUN gemu update bundler && gem install bundler 'jekyll:3.9.2'
