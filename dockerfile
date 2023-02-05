@@ -4,8 +4,8 @@
 FROM ruby:2.7-alpine3.15
 
 # Add Jekyll dependencies to Alpine
-RUN apk udpate
+#RUN apk udpate
 RUN apk add --no-cache build-base gcc cmake git
 
 # Update the Ruby bundler and install Jekyll
-RUN gemu update bundler && gem install bundler 'jekyll:4.3.2'
+RUN gemu update bundler && gem install bundler 'jekyll:4.2.2'
